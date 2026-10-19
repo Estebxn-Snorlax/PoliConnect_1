@@ -28,6 +28,7 @@
     width: 400px;
     float: left;
     height: 70px;
+
 }
 
 ul{
@@ -39,7 +40,7 @@ ul{
 
 ul li{
     list-style: none;
-    margin-left: 62px;
+    margin-left: 130px;
     margin-top: 27px;
     font-size: 14px;
 }
@@ -58,4 +59,44 @@ ul li a:hover{
 
 body{
     background-color: beige;
+}
+
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: black;
+    position: relative;
+    float: left;
+}
+
+.content h1{
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+    position: relative; bottom: -73px;
+}
+
+.content .cn{
+    width: 160px;
+    height: 40px;
+    background: chocolate
+    
+}
+
+a{
+    color: black;
+}
+
+button{
+position: relative; top: -110px;
+}
+
+img{
+    position: relative; left: -100px;
+    float: right;
+    position: relative; top: -300px;
+    width: 620px;
 }
