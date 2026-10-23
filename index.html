@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,37 +8,161 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <section id="page1">
         <div class="menu">
-            <div class="main">
-            </div>
             <div class="navbar">
                 <div class="icon">
-                    <h2 class="logo">PoliConnect</h2>
+                    <h2 class="logo">Poli<span>Connect</span></h2>
+                    <svg class="navbarIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                        <path d="M17 21a5 5 0 0 0-10 0"/>
+                        <path d="M22 10.5a3.5 3.5 0 0 0-5.507-2.868"/>
+                        <path d="M7.507 7.632A3.5 3.5 0 0 0 2 10.5"/>
+                        <circle cx="12" cy="13" r="3"/>
+                        <circle cx="18.5" cy="4.5" r="2.5"/>
+                        <circle cx="5.5" cy="4.5" r="2.5"/>
+                    </svg>
                 </div>
+
                 <ul>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="#ABOUT">ABOUT</a></li>
+                    <li><a href="#STATS">STATISTICS</a></li>
                     <li><a href="#">SERVICE</a></li>
-                    <li><a href="#">DESIGN</a></li>
                     <li><a href="#">CONTACT</a></li>
                 </ul>
             </div>
-            
-            <div class="content">
-                <div class="contentLeft">
-                    <h1>Where Students <br><span>Meet Politicians</span></h1>
-                <button class="cn"><a href="GetConnected.html">Get Connected</a></button>
-                </div>
-                 <div class="contentRight">
-                <img src="public/stock.jpg"/>
+        </div>
+
+        <div class="content">
+            <div class="contentLeft">
+                <h1 aria-label="Where Students Meet Politicians">
+                    <span class="line1">Where <span class="typed" id="typed" aria-hidden="true">Students</span><span class="cursor" aria-hidden="true">|</span></span><br>
+                    <span class="accent">Meet Politicians</span>
+                </h1>
+
+                <button class="cn">
+                    <a href="GetConnected.html">Get Connected</a>
+                </button>
+            </div>
+
+            <div class="contentRight">
+                <div class="heroVisual" id="hero-visual">
+                    <img class="heroImage" src="public/stock.jpg" alt="PoliConnect">
+                    <div class="visualCard visualCard--top" aria-hidden="true">
+                        <span class="visualCardLabel">COMMUNITY</span>
+                        <strong>Local voices</strong>
+                    </div>
+                    <div class="visualCard visualCard--left" aria-hidden="true">
+                        <span class="visualCardLabel">A PLACE TO</span>
+                        <strong>Be heard</strong>
+                    </div>
+                    <div class="visualCard visualCard--bottom" aria-hidden="true">
+                        <span class="visualCardLabel">BUILT ON</span>
+                        <strong>Real connection</strong>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
     <section id="ABOUT">
-        <h1> Why PoliConnect</h1>
+        <div class="aboutHeader">
+            <h1>Why PoliConnect?</h1>
+            <p>PoliConnect helps high school students connect with politicians and other public officials to speak up about issues in their communities.</p>
+        </div>
+
+        <main class="page-content">
+            <article class="card">
+                <div class="content">
+                    <h2 class="title">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                            <path d="M15.914 4a1.5 1.5 0 0 0-2.474-1.561l-9 9A1.5 1.5 0 0 0 5.5 14h4.002a.5.5 0 0 1 .471.666L8.086 20a1.5 1.5 0 0 0 2.475 1.56l9-9A1.5 1.5 0 0 0 18.5 10h-3.997a.5.5 0 0 1-.472-.667z"/>
+                        </svg>
+                        <span>Easy to Use</span>
+                    </h2>
+                    <p class="copy">
+                        PoliConnect is easy to understand and use for everyone.
+                    </p>
+                    <a class="btn" href="#">Learn More</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="content">
+                    <h2 class="title">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                            <path d="M14 21v-3a2 2 0 0 0-4 0v3"/>
+                            <path d="M18 4.933V21"/>
+                            <path d="m4 6 7.106-3.79a2 2 0 0 1 1.788 0L20 6"/>
+                            <path d="m6 11-3.52 2.147a1 1 0 0 0-.48.854V19a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-5a1 1 0 0 0-.48-.853L18 11"/>
+                            <path d="M6 4.933V21"/>
+                            <circle cx="12" cy="9" r="2"/>
+                        </svg>
+                        <span>Student Voices</span>
+                    </h2>
+                    <p class="copy">
+                        Students' voices matter and deserve to be heard.
+                    </p>
+                    <a class="btn" href="#">Learn More</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="content">
+                    <h2 class="title">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                            <path d="M16.051 12.616a1 1 0 0 1 1.909.024l.737 1.452a1 1 0 0 0 .737.535l1.634.256a1 1 0 0 1 .588 1.806l-1.172 1.168a1 1 0 0 0-.282.866l.259 1.613a1 1 0 0 1-1.541 1.134l-1.465-.75a1 1 0 0 0-.912 0l-1.465.75a1 1 0 0 1-1.539-1.133l.258-1.613a1 1 0 0 0-.282-.866l-1.156-1.153a1 1 0 0 1 .572-1.822l1.633-.256a1 1 0 0 0 .737-.535z"/>
+                            <path d="M8 15H7a4 4 0 0 0-4 4v2"/>
+                            <circle cx="10" cy="7" r="4"/>
+                        </svg>
+                        <span>Community Impact</span>
+                    </h2>
+                    <p class="copy">
+                        Students can help create meaningful change in their communities and society.
+                    </p>
+                    <a class="btn" href="#">Learn More</a>
+                </div>
+            </article>
+        </main>
     </section>
 
+    <section id="STATS">
+        <div class="statsContent">
+            <h1>PoliConnect by the Numbers</h1>
+
+            <p class="statsIntro">
+                Our impact starts with connecting students to civic life.
+            </p>
+
+            <div class="statsGrid">
+                <div class="statCard">
+                    <span class="statNumber">000+</span>
+                    <h2>Students</h2>
+                    <p>Students engaged with PoliConnect</p>
+                </div>
+
+                <div class="statCard">
+                    <span class="statNumber">000+</span>
+                    <h2>Politicians</h2>
+                    <p>Public representatives on the platform</p>
+                </div>
+
+                <div class="statCard">
+                    <span class="statNumber">000+</span>
+                    <h2>Connections</h2>
+                    <p>Student and representative connections</p>
+                </div>
+
+                <div class="statCard">
+                    <span class="statNumber">000+</span>
+                    <h2>Communities</h2>
+                    <p>Communities reached through civic engagement</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
