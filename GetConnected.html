@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find the right public officials to contact about an issue in your community.">
+    <title>Get Connected | PoliConnect</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="get-connected.css">
+</head>
+<body class="connect-page">
+    <header class="connect-header">
+        <a class="connect-brand" href="index.html">
+            <span class="connect-logo">Poli<span>Connect</span></span>
+            <svg class="connect-brand-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                <path d="M17 21a5 5 0 0 0-10 0"/>
+                <path d="M22 10.5a3.5 3.5 0 0 0-5.507-2.868"/>
+                <path d="M7.507 7.632A3.5 3.5 0 0 0 2 10.5"/>
+                <circle cx="12" cy="13" r="3"/>
+                <circle cx="18.5" cy="4.5" r="2.5"/>
+                <circle cx="5.5" cy="4.5" r="2.5"/>
+            </svg>
+        </a>
+        <nav aria-label="Main navigation">
+            <a href="index.html">HOME</a>
+            <a href="index.html#ABOUT">ABOUT</a>
+            <a class="active" href="GetConnected.html" aria-current="page">GET CONNECTED</a>
+        </nav>
+    </header>
+
+    <main class="connect-main">
+        <section class="connect-intro" aria-labelledby="connect-title">
+            <h1 id="connect-title">Let’s find the right people to hear you.</h1>
+            <p>Tell us a little more, and explore public officials who can help.</p>
+        </section>
+
+        <section class="connect-flow" aria-label="Find public officials">
+            <div class="scope-step" id="scope-step">
+                <div class="step-heading">
+                    <span class="step-number">01</span>
+                    <div>
+                        <h2>What type of issue do you have?</h2>
+                        <p>Start by choosing the level of government closest to your issue.</p>
+                    </div>
+                </div>
+
+                <div class="scope-options" role="group" aria-label="Issue level">
+                <button class="scope-option" type="button" data-scope="federal" aria-pressed="false">
+                    <span class="scope-icon" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6M9 9h.01M15 9h.01M9 12h.01M15 12h.01"/></svg>
+                    </span>
+                    <span><strong>Federal</strong><small>National policies and services</small></span>
+                    <span class="option-arrow" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right preview-icon"><path d="M18 8L22 12L18 16"/><path d="M2 12H22"/></svg></span>
+                </button>
+                <button class="scope-option" type="button" data-scope="state" aria-pressed="false">
+                    <span class="scope-icon" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z"/><path d="m9 12 2 2 4-4"/></svg>
+                    </span>
+                    <span><strong>State</strong><small>State laws and programs</small></span>
+                    <span class="option-arrow" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right preview-icon"><path d="M18 8L22 12L18 16"/><path d="M2 12H22"/></svg></span>
+                </button>
+                <button class="scope-option" type="button" data-scope="local" aria-pressed="false">
+                    <span class="scope-icon" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+                    </span>
+                    <span><strong>Local</strong><small>Your city, county, or town</small></span>
+                    <span class="option-arrow" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right preview-icon"><path d="M18 8L22 12L18 16"/><path d="M2 12H22"/></svg></span>
+                </button>
+                <button class="scope-option" type="button" data-scope="school" aria-pressed="false">
+                    <span class="scope-icon" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m3 10 9-7 9 7M5 9v11h14V9M9 20v-6h6v6M9 10h.01M15 10h.01"/></svg>
+                    </span>
+                    <span><strong>School board</strong><small>Schools and student life</small></span>
+                    <span class="option-arrow" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right preview-icon"><path d="M18 8L22 12L18 16"/><path d="M2 12H22"/></svg></span>
+                </button>
+                </div>
+            </div>
+
+            <div class="follow-up" id="follow-up" hidden>
+                <div class="step-heading">
+                    <span class="step-number">02</span>
+                    <div>
+                        <h2 id="follow-up-title" tabindex="-1">Tell us more about your issue</h2>
+                        <p id="follow-up-copy">Choose a topic to see who may be able to help.</p>
+                    </div>
+                </div>
+
+                <div class="select-grid">
+                    <label class="field" id="state-field" hidden>
+                        <span>What state are you in?</span>
+                        <select id="state-select">
+                            <option value="">Select a state</option>
+                            <option>Alabama</option><option>Alaska</option><option>Arizona</option><option>Arkansas</option>
+                            <option>California</option><option>Colorado</option><option>Connecticut</option><option>Delaware</option>
+                            <option>Florida</option><option>Georgia</option><option>Hawaii</option><option>Idaho</option>
+                            <option>Illinois</option><option>Indiana</option><option>Iowa</option><option>Kansas</option>
+                            <option>Kentucky</option><option>Louisiana</option><option>Maine</option><option>Maryland</option>
+                            <option>Massachusetts</option><option>Michigan</option><option>Minnesota</option><option>Mississippi</option>
+                            <option>Missouri</option><option>Montana</option><option>Nebraska</option><option>Nevada</option>
+                            <option>New Hampshire</option><option>New Jersey</option><option>New Mexico</option><option>New York</option>
+                            <option>North Carolina</option><option>North Dakota</option><option>Ohio</option><option>Oklahoma</option>
+                            <option>Oregon</option><option>Pennsylvania</option><option>Rhode Island</option><option>South Carolina</option>
+                            <option>South Dakota</option><option>Tennessee</option><option>Texas</option><option>Utah</option>
+                            <option>Vermont</option><option>Virginia</option><option>Washington</option><option>West Virginia</option>
+                            <option>Wisconsin</option><option>Wyoming</option>
+                        </select>
+                    </label>
+
+                    <label class="field" id="district-field" hidden>
+                        <span>Which school board?</span>
+                        <select id="district-select">
+                            <option value="">Select a school board</option>
+                        </select>
+                    </label>
+
+                    <label class="field" id="issue-field">
+                        <span id="issue-label">What is your issue about?</span>
+                        <select id="issue-select">
+                            <option value="">Choose a topic</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
+
+            <section class="officials-section" id="officials-section" aria-live="polite" hidden>
+                <div class="step-heading officials-heading">
+                    <span class="step-number">03</span>
+                    <div>
+                        <p class="eyebrow">A PLACE TO START</p>
+                        <h2 id="officials-title">Public officials</h2>
+                        <p id="officials-copy">These demo profiles will be updated with real information.</p>
+                    </div>
+                </div>
+                <div class="officials-list" id="officials-list"></div>
+                <p class="demo-note" id="demo-note">Demo profiles are placeholders and are not real elected officials.</p>
+            </section>
+
+            <section class="profile-step" id="profile-step" aria-label="Official profile" hidden>
+                <section class="profile-view" id="profile-view" aria-live="polite"></section>
+            </section>
+
+            <nav class="step-progress" aria-label="Get connected progress">
+                <button class="progress-dot is-current" type="button" data-step="1" aria-label="Go to issue level" aria-current="step" title="Issue level"></button>
+                <button class="progress-dot" type="button" data-step="2" aria-label="Go to issue details" title="Issue details" disabled></button>
+                <button class="progress-dot" type="button" data-step="3" aria-label="Go to official profiles" title="Official profiles" disabled></button>
+                <button class="progress-dot" type="button" data-step="4" aria-label="Go to selected profile" title="Selected profile" disabled></button>
+            </nav>
+        </section>
+    </main>
+
+    <footer class="connect-footer">
+        <a href="index.html">← Back to PoliConnect home</a>
+    </footer>
+
+    <script src="get-connected.js"></script>
+</body>
+</html>
